@@ -1,13 +1,115 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html{
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  --webkit-font-smoothing: antialiased;
+}
+
+hr{
+  margin: 0;
+}
+/* ............ Navbar ...........*/
+
+.nav-bar{
+  background-color: #ff3838;
+  width: 100%;
+  height: 150px;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.nav-bar h1{
+  font-size: 70px;
+  margin: 0;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+
+.nav-bar input[type=text]{
+  width: 30%;
+  padding: 8px 8px;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  outline: none;
+  font-weight: bold;
+}
+
+.nav-bar button{
+  padding: 10px 9px;
+  font-size: 13px;
+  /* width: 10%; */
+  font-weight: bolder;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  cursor: pointer;
+}
+
+.nav-bar button:hover{
+  color: #ffaf40;
+}
+
+
+/* .............. Recipes .............. */
+
+.container{
+  border: 2px solid black;
+  /* width: 1200px; */
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: 2px solid black;
+  background-color: #ffaf40;
+}
+
+.container .card{
+  width: 300px;
+  text-align: center;
+  margin: 20px;
+  /* border: 3px solid black; */
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: #7efff5;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.container .card .card-img{
+  height: 300px;
+}
+
+.container .card .card-img img{
+  object-fit: cover;
+}
+
+.container .card h1{
+  background-color: #32ff7e;
+  margin: 0;
+  padding: 15px;
+}
+
+.container .card ul{
+  list-style: none;
+  text-align: left;
+  padding: 0;
+}
+
+.container .card ul li{
+  margin: 10px;
+}
+
+
+/* .............. Media Queary .......... */
+
+@media(max-width:500px){
+  .nav-bar h1{
+    font-size: 40px;
+  }
 }
